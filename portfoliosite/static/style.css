@@ -1,0 +1,32 @@
+*{
+    font-family:poppins,sans-serif;
+}
+.profile{
+    height: 400px;
+    width: 400px;
+}
+.large-font {
+    font-size: 48px;
+}
+
+.border-my {
+    border: 2px solid black;
+}
+.border-my:hover {
+    border: 2px solid black;
+    background-color: rgb(146, 133, 133);
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proj-img{
+    height: 130px;
+    width: 180px;
+}
+
+.contact-img {
+    height: 40px;
+    width: 40px;
+}

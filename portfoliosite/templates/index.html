@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .nav-font {
+            font-size: 25px;
+        }
+
+        .text-black {
+            color: black;
+        }
+
+        .navbar-brand {
+            font-size: 33px;
+            font-weight: 400;
+        }
+
+        .navbar-nav .nav-item:hover .nav-link {
+            color: rgb(193, 190, 190);
+            /* Change text color to whitesmoke */
+
+
+            position: relative;
+            /* Set position relative for positioning the underline */
+        }
+
+
+        .navbar-nav .nav-item:hover .nav-link::after {
+            content: "";
+            /* Add an empty content */
+            position: absolute;
+            /* Position the underline absolutely */
+            left: 0;
+            /* Start from the left */
+            bottom: -3px;
+
+            /* Move the underline slightly below the text */
+            height: 2px;
+            /* Set height of the underline */
+            width: 100%;
+            /* Full width of the text */
+            background-color: rgb(169, 146, 146);
+            /* Color of the underline */
+        }
+
+        ul li a {
+            color: whitesmoke;
+        }
+
+        .khaligroup {
+            height: 150px;
+        }
+        .ancher_hataune{
+            text-decoration:None;
+            color:black;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar section -->
+    <div class="container mt-5 d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg sticky-top col-lg-10">
+            <div class="container-fluid justify-content-center ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse  justify-content-between " id="navbarScroll">
+                    <a class="navbar-brand" href="#">Ankit Dev</a>
+                    <ul class="navbar-nav me-auton mb-2 mb-lg-0 nav-font">
+                        <li class="nav-item"><a class="nav-link fw-bolder mx-4  text-black " href="#about">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bolder mx-4  text-black"
+                                href="#Experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bolder  mx-4 text-black" href="#projects">Project</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bolder mx-4  text-black" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- Profile section  -->
+    <section id="profile">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="conatainer col-lg-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="container left  col-lg-6 col-md-12 ">
+                                <img src="../static/images/profile.jpg"
+                                    class="img-fluid rounded-circle ms-5 col-md-12 p-4 ms-5 mt-4 profile" alt="...">
+                            </div>
+                            <div class="container right col-lg-6 mt-4 ms-0">
+                                <div class="lead fw-bold col-12 ms-5 mt-2">Hello I am, </div>
+                                <h5 class="card-title fw-bolder large-font col-12 ms-5 mt-3">Ankit Devkota</h5>
+                                <p class="card-title fw-bolder text-secondary nav-font col-12 ms-5 mt-2">CS and physics
+                                    enthusiast</p>
+                                <div class="container pt-1 mt-2">
+                                    <div class="btns-group ps-3 ">
+                                        <button class="btn mx-3 rounded-pill border-my fw-bolder">Download CV</button>
+                                        <button class="btn rounded-pill fw-bolder border-my">Contact info</button>
+
+                                    </div>
+                                    <div class="img-grp mt-3 ms-5 ps-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin ms-5 me-3" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="khaligroup">
+
+    </div>
+
+    <!-- about me -->
+    <section id="about">
+        <div class="container ">
+            <div class="heading-texts d-flex flex-column justify-content-center align-items-center">
+                <p class="h6" style="font-size: 16px;">Get to know more</p>
+                <h1 class="h1 lead fw-bolder" style="font-size: 48px;"> About me</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="container col-lg-5">
+                        <img src="../static/images/profile.jpg"
+                            class="img-fluid  rounded rounded-5  ms-5 col-md-12 p-4 ms-5 mt-4 profile" alt="...">
+
+
+                    </div>
+                    <div class="container col-lg-6  fs-7 lead ">
+                        <div class="card-text lead fs-7 mt-5 p-3 pt-5">
+                            Hello , I am ankit devkota , an high school graduate from bardiya district. I love solving
+                            problems and dive deep into the concepts. I completed my high school from st.xavier's
+                            college maitighar. Currently, I am working as a freelancer.
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="khaligroup">
+
+    </div>
+    <!-- Experience -->
+
+    <section id="Experience">
+        <div class="container">
+            <div class="heading-texts d-flex flex-column justify-content-center align-items-center">
+                <p class="h6" style="font-size: 16px;">Explore my</p>
+                <h1 class="h1 lead fw-bolder" style="font-size: 48px;">Experience</h1>
+            </div>
+            <div class="container ">
+                <div class="container col-lg-6  card mt-3">
+                    <div class="card-title h2 fw-bolder text-secondary mt-2 p-2 px-4  text-center">MY TECH STACK</div>
+                    <div class="container">
+                        <div class="row">
+                            {% for char in total_tech_stack %}
+
+                            <!-- From here you should repeat your tech stack using if else -->
+                            <div class="col-lg-4 tech stack repeat mt-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="text lead fs-7 fw-bolder">{{char.Name}}</div>
+                                            <h6 class="text">{{char.level}}</h6>
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                
+
+
+                            </div>
+                            {% endfor %}
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+    </section>
+    <div class="khaligroup">
+
+    </div>
+    <section id="projects">
+        <div class="container">
+            <div class="heading-texts d-flex flex-column justify-content-center align-items-center">
+                <p class="h6" style="font-size: 16px;">Explore my recent</p>
+                <h1 class="h1 lead fw-bolder" style="font-size: 48px;"> projects</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    {% for char in total_projects%}
+                    <div class="col-lg-3  card offset-1 mt-3 col-11">
+                        <div class="d-flex flex-column justify-content-center align-items-center mt-3">
+                            <img src="{{char.image.url}}" class="col-lg-12 proj-img rounded-3 border border-1 mb-3 mt-2">
+
+                            <h2 class=" card-title lead fw-bolder text-center">
+                               {{char.Name}}
+                            </h2>
+
+                            <div class="container mb-3">
+                                <div class="btns-grp mt-2 d-flex justify-content-center">
+                                    <button type="button" class="btn rounded-pill border-my px-3"> <a href="{{char.git_url}}" class='ancher_hataune'>Github</a></button>
+                                    <button type="button" class="btn rounded-pill ms-3 border-my px-3 ancher_hataune">Live
+                                        demo</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    {% endfor %}
+                   
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="khaligroup">
+
+    </div>
+
+    <!-- CONTACT ME SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="heading-texts d-flex flex-column justify-content-center align-items-center">
+                <p class="h6" style="font-size: 16px;">Get in touch</p>
+                <h1 class="h1 lead fw-bolder" style="font-size: 48px;">Contact me</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-0">
+
+                        </div>
+                        <div class="card col-lg-6  mt-4 rounded-5 col-12 col-md-12">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-8  mail d-flex flex-row mt-1 col-md-11 ">
+                                        <img src="../static/images/email.svg" class="contact-img m-3 me-0 mt-4" style="height: 50px; ">
+                                        <h5 class="card-text lead fw-bolder mt-4 pt-2 fs-4 ms-3 p-1"><a  class ="ancher_hataune"href="https://mail.google.com/mail/?view=cm&fs=1&to=ankitdevkota107@gmail.com&su=Hello%20Ankit&body=I%20wanted%20to%20reach%20out%20to%20you%20regarding...">
+                                            ankitdevkota107@gmail.com</a></h5>
+                                    </div>
+                                    <div class="col-lg-4  linkedin d-flex flex-row mt-2 col-md-11">
+                                       
+                                        
+                                        <svg class="m-3 mt-4 me-1 contact-img" xmlns="http://www.w3.org/2000/svg"
+                                            width="16" height="16" fill="currentColor" class="bi bi-linkedin" style="height: 35px;"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+                                        <a href='https://www.linkedin.com/in/ankit-devkota-6b535a282/' class="ancher_hataune">
+                                        <h5 class="card-text lead fw-bolder mt-4 fs-4 ms-3 pt-2 ">
+                                            LinkedIn</h5>
+                                        </a>
+                                    </div>
+                               
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <div class="khaligroup">
+
+    </div>
+
+        <!-- Footer section -->
+        <section id="footer">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div
+                    class="card col-lg-7 d-flex flex-column justify-content-center align-items-center p-3 rounded-5 pb-0 border-0 col-10">
+                    <ul class="navbar-nav me-auton mb-2 mb-lg-0 nav-font d-flex flex-row  ">
+                        <li class="nav-item"><a class="nav-link fw-bolder mx-3  text-black " href="#about">About</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bolder mx-3 text-black"
+                                href="#Experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bolder  mx-3 text-black" href="#projects">Project</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-bolder mx-3  text-black" href="#contact">Contact</a></li>
+                    </ul>
+                    <p class="card-text my-3">Copyright © 2024 Ankit Devkota. All Rights Reserved.</p>
+    
+    
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+
+</body>
+
+</html>
